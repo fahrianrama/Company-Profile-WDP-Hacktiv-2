@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hacktiv Project 3 by Fahrian Ramaditiya</title>
+    <title>Hacktiv Project 3</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Basic" rel="stylesheet"> 
@@ -35,21 +35,42 @@
 
     <!-- Jumbotron -->
     <div class="container">
-        <div class="d-flex flex-row jumbotron justify-content-between">
-            <div class="d-flex flex-column justify-content-center">
-                <div class="headertext">
-                    We Create <br>
-                    Content that <br>
-                    ranks
+        <div class="d-none d-lg-block">
+            <div class="d-flex flex-row jumbotron justify-content-between">
+                <div class="d-flex flex-column justify-content-center">
+                    <div class="headertext">
+                        We Create <br>
+                        Content that <br>
+                        ranks
+                    </div>
+                    <div class="see text-center">
+                        <span>
+                            <a class="text" href="#portfolio">SEE OUR WORKS</a>
+                        </span>
+                    </div>
                 </div>
-                <div class="see text-center">
-                    <span>
-                        <a class="text" href="#portfolio">SEE OUR WORKS</a>
-                    </span>
+                <div>
+                    <img src="images/jumbotron.jpg" class="img-fluid">
                 </div>
             </div>
-            <div>
-                <img src="images/jumbotron.jpg" class="img-fluid">
+        </div>  
+        <div class="d-block d-lg-none col">
+            <div class="d-flex flex-column jumbotron justify-content-between"></div>
+                <div class="d-flex flex-column justify-content-center">
+                    <div class="headertext">
+                        We Create <br>
+                        Content that <br>
+                        ranks
+                    </div>
+                    <div class="see text-center">
+                        <span>
+                            <a class="text" href="#portfolio">SEE OUR WORKS</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="justify-content-end d-flex my-5">
+                    <img src="images/jumbotron.jpg" class="img">
+                </div>
             </div>
         </div>
     </div>
@@ -61,8 +82,8 @@
         <div class="title">About Us</div>
         <div class="line"></div>
         <div class="sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-            <br> labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            <br> laboris nisi ut aliquip ex ea commodo consequat.</div>
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.</div>
     </div>
     <!-- End About -->
 
@@ -72,7 +93,7 @@
         <div class="line"></div>
     </div>
     <div class="section2"></div>
-    <div class="container d-flex flex-row justify-content-center">
+    <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-center">
         <!-- appdev -->
         <div class="box yellow d-flex flex-column align-items-center">
             <img src="images/appdev.png" class="img-fluid">
@@ -112,45 +133,45 @@
     <!-- Portfolio -->
     <div id="portfolio" class="container d-flex flex-column align-items-center portfolio">
         <div class="title white">Our Work</div>
-        <div class="line"></div>
-        <div class="container-fluid d-flex flex-row justify-content-center">
-            <div class="workbox orange d-flex align-items-center justify-content-center w-50">
+        <div class="line mb-4"></div>
+        <div class="container-fluid d-flex flex-column flex-lg-row align-items-center justify-content-center align-items-lg-start">
+            <div class="workbox orange d-flex align-items-center justify-content-center">
                 <span><img src="images/porto1.png" class="img-fluid"></span>
             </div>
-            <div class="d-flex flex-column worktext left w-50">
+            <div class="d-flex flex-column worktext left">
                 <div class="title">Brand Name</div>
                 <div class="subtitle">iOS | ANDROID | WEB DEVELOPMENT</div>
                 <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
             </div>
         </div>
-        <div class="container-fluid d-flex flex-row justify-content-center">
-            <div class="d-flex flex-column worktext right w-50">
-                <div class="title">Brand Name</div>
-                <div class="subtitle">iOS | ANDROID | WEB DEVELOPMENT</div>
-                <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-            </div>
-            <div class="workbox purple d-flex align-items-end justify-content-center w-50">
+        <div class="container-fluid d-flex flex-column flex-lg-row-reverse justify-content-center align-items-lg-start align-items-center">
+            <div class="workbox purple d-flex align-items-center justify-content-center">
                 <span><img src="images/porto2.png" class="img-fluid"></span>
             </div>
+            <div class="d-flex flex-column worktext right">
+                <div class="title">Brand Name</div>
+                <div class="subtitle">iOS | ANDROID | WEB DEVELOPMENT</div>
+                <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            </div>
         </div>
-        <div class="container-fluid d-flex flex-row justify-content-center">
-            <div class="workbox pink d-flex align-items-center justify-content-center w-50">
+        <div class="container-fluid d-flex flex-column flex-lg-row align-items-center justify-content-center align-items-lg-start">
+            <div class="workbox pink d-flex align-items-center justify-content-center">
                 <span><img src="images/porto3.png" class="img-fluid"></span>
             </div>
-            <div class="d-flex flex-column worktext left w-50">
+            <div class="d-flex flex-column worktext left">
                 <div class="title">Brand Name</div>
                 <div class="subtitle">iOS | ANDROID | WEB DEVELOPMENT</div>
                 <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
             </div>
         </div>
-        <div class="container-fluid d-flex flex-row justify-content-center">
-            <div class="d-flex flex-column worktext right w-50">
+        <div class="container-fluid d-flex flex-column flex-lg-row-reverse justify-content-center align-items-lg-start align-items-center">
+            <div class="workbox blue d-flex align-items-center justify-content-center">
+                <span><img src="images/porto4.png" class="img-fluid"></span>
+            </div>
+            <div class="d-flex flex-column worktext right">
                 <div class="title">Brand Name</div>
                 <div class="subtitle">iOS | ANDROID | WEB DEVELOPMENT</div>
                 <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-            </div>
-            <div class="workbox blue d-flex align-items-center justify-content-center w-50">
-                <span><img src="images/porto4.png" class="img-fluid"></span>
             </div>
         </div>
     </div>
@@ -158,12 +179,12 @@
 
     <!-- Contact -->
     <div id="contact" class="container d-flex flex-column align-items-center contact">
-        <div class="container-fluid d-flex flex-row justify-content-center">
-            <div class="d-flex flex-column w-50">
+        <div class="container-fluid d-flex flex-lg-row flex-column align-items-center align-items-lg-start justify-content-center">
+            <div class="d-flex flex-column left">
                 <div class="quote">Questions, Comments, Concerns?</div>
                 <div class="title">We'd love to <span class="pinktext">hear</span> from you!</div>
             </div>
-            <div class="d-flex flex-column left w-50">
+            <div class="d-flex flex-column left">
                 <form action="#">
                     <div class="mb-3">
                         <div class="formtext">Your Email Address</div>
